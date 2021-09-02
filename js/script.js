@@ -13,4 +13,13 @@ var loadCities = function() {
     }
 }
 
+// Search Button is clicked 
+var submitButton = function(event) {
+    event.preventDefault();
+    var city = cityInputEl.nodeValue.trim();
+    if(city) {
+        getLATLON(city)
+        cityInputEl.value = '';
+    } else ('Please enter a city');
+    }
 

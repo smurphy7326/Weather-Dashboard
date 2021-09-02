@@ -15,4 +15,40 @@
         <h1 class='text-center white-font'>Weather Dashboard</h1>
     </header>
 
+    <main>
+        <div class="flex-row space-between">
+            <div class="col-12 col-md-4" id="searchbar">
+                <div class="searchFormContainer">
+                    <form id="formCities" class="card-body">
+                        <div class="form-group">
+                        <input name="cityName" id="cityName" type="text" class="form-input" placeholder="Enter a city name for the Weather!" />
+                        <button id="submitBtn" type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+                <div>
+                <ul id="historyContainer" class="list-group"></ul>
+                </div>
+                <div class ="col-md-9">
+                    <div id="current-weather" class="card"> <!-- Made it with cards so it can have one block -->
+                        <div class="card-body">
+                            <div id="todayWeather">
+                                <p class="card-text" id="current-Temperature"></p>
+                                <p class="card-text" id="current-Humidity"></p>
+                                <p class="card-text" id="current-Wind"></p>
+                                <p class="card-text" id="current-UVIndex"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div id="fiveDayForecast" class="col=md-9"></div>
+
+                <h5>Forecast:</h5>
+                <div class="forecast-cards"> 
+
+                    </div>
+                </div>
+
+        
 </body>
